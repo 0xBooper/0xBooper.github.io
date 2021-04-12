@@ -3,12 +3,9 @@
     width: 20%;
     background-color: #03fcd3;
     font-family: Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 50% auto 50% auto;
     padding: 1.5em;
     border-radius: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 

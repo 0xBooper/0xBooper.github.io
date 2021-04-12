@@ -1,2 +1,2 @@
 # 0xBooper.github.io
-a test
+A small, minimalist website where I try to post about my thoughts.

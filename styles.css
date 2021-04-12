@@ -1,4 +1,6 @@
 .container {
+    height: 80%;
+    width: 20%;
     background-color: #03fcd3;
     font-family: Arial;
     display: flex;

@@ -10,6 +10,25 @@ body {
     background-color: white;
     border-radius: 2rem;
     min-height: 90vh;
-    padding: 1.2em;
+    padding: 1.5em;
+    min-width: 2.5em;
     font-family: Montserrat, Arial;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px;
+    border-bottom-style: groove;
+    margin-top: 5px;
+}
+
+.main-header-text {
+    font-weight: bold;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #333;
 }

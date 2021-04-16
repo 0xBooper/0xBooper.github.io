@@ -2,12 +2,13 @@
 body {
     margin: none;
     padding: none;
+    color: white;
     background-image: linear-gradient(to right, #8bfc8f, #8bc5fc);
 }
 
 .container {
     margin: auto 2.5em auto 2.5em;
-    background-color: white;
+    background-color: black;
     border-radius: 2rem;
     min-height: 90vh;
     padding: 1.5em;
@@ -30,5 +31,5 @@ body {
 
 .nav-link a {
     text-decoration: none;
-    color: #333;
+    color: #999;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
     margin: none;
     padding: none;
@@ -31,5 +31,4 @@ body {
 
 .nav-link a {
     text-decoration: none;
-    color: #dfdfdf;
-}
+    color: #98de8c;

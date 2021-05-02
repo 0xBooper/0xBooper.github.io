@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>0xBooper's Personal Site</title>
+    <title>Using the Bash Scripting Utility</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
@@ -19,8 +19,34 @@
             </nav>
         </header>
 
-        <h2>In development! Excited to finish this!</h2>
-        <p>Run <span class="code-block"><p>bashutil --help</p></span> for further info.</p>
+        <h2>The Bash Scripting Utility official Tutorial.</h3>
+            <hr>
+            <h2>Downloading the utility:</h2>
+            <ol>
+                <li>Install git by using your package manager. (e.g: pacman -S git)</li>
+                <li>Run git clone https://github.com/0xBooper/BashScriptingUtility.git</li>
+                <li>Cd into the directory where it got cloned for the next steps.</li>
+            </ol>
+
+            <h2>Installing the utility.</h2>
+            <ol>
+                <li>Run ./install.sh (Warning: This will require superuser priviledges.)</li>
+            </ol>
+
+            <h2>Using it.</h2>
+            <p>(For a quick explanation of the options, run bashutil -h)</p>
+
+            <p>An example of using it: bashutil -d ~/foo -f bar </p>
+            <p>In this example, -d means the directory of the new script, and -f means the filename of the new script. After running this, you will be prompted if the information is correct. After answering this, the utility will proceed.</p>
+
+            <p>Options:</p>
+            <ul>
+                <li>-h: Shows the help screen.</li>
+                <li>-v: Shows the current version of the installed utility.</li>
+                <li>-f: Gets the filename. For examples look above.</li>
+                <li>-d: Gets the directory of the new script. For examples look above.</li>
+            </ul>
+
     </div>
 </body>
 

@@ -3,9 +3,10 @@
     "version": "1.0.0",
     "description": "A personal website where I might post my thoughts.",
     "scripts": {
-        "build": "pug3 -o ./build ./src",
+        "build": "pug3 -o ./build ./src -P",
         "postbuild": "cp ./src/css/styles.css ./build/css/styles.css",
-        "dev": "pug3 -o ./build -w ./src"
+        "deploy": "node deploy.js",
+        "dev": "pug3 -o ./build -w ./src -P"
     },
     "main": "none",
     "repository": "https://github.com/0xBooper/0xBooper.github.io.git",

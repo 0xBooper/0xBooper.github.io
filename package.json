@@ -1,11 +1,12 @@
 {
     "name": "0xBooper.github.io",
-    "version": "1.0.0",
+    "version": "1.0.0-beta",
     "description": "A personal website where I might post my thoughts.",
     "scripts": {
         "build": "pug3 -o ./build ./src -P",
         "postbuild": "cp ./src/css/styles.css ./build/css/styles.css",
         "deploy": "node deploy.js",
+        "predeploy": "yarn build",
         "dev": "pug3 -o ./build -w ./src -P"
     },
     "main": "none",

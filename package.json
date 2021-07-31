@@ -4,7 +4,7 @@
     "description": "A personal website where I might post my thoughts.",
     "scripts": {
         "build": "pug3 -o ./build ./src -P",
-        "postbuild": "mkdir ./build/styles && cp ./src/css/styles.css ./build/css/styles.css",
+        "postbuild": "mkdir ./build/css && cp ./src/css/styles.css ./build/css/styles.css",
         "deploy": "node deploy.js",
         "predeploy": "yarn build",
         "dev": "pug3 -o ./build -w ./src -P"

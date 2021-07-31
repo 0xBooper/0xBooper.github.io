@@ -5,6 +5,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title 0xBooper's Site
+        block header
     body
         .container
             header.main-header
@@ -14,4 +15,8 @@ html(lang="en")
                         li.nav-link 
                             a(href="/index") Home 
                         li.nav-link
+                            a(href="/articles") Articles
                         li.nav-link 
+                            a(href="/links") Links to stuff
+
+            block content

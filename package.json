@@ -2,9 +2,17 @@
     "name": "0xBooper.github.io",
     "version": "1.0.0",
     "description": "A personal website where I might post my thoughts.",
+    "scripts": {
+        "build": "pug3 -o ./build ./src",
+        "postbuild": "cp ./src/css/styles.css ./build/css/styles.css",
+        "dev": "pug3 -o ./build -w ./src"
+    },
     "main": "none",
     "repository": "https://github.com/0xBooper/0xBooper.github.io.git",
     "author": "0xBooper <yourhighboopness@gmail.com>",
     "license": "GPL-3.0-only",
-    "private": false
+    "private": false,
+    "dependencies": {
+        "@anduh/pug-cli": "^1.0.0-alpha8"
+    }
 }

@@ -13,6 +13,7 @@
     "license": "GPL-3.0-only",
     "private": false,
     "dependencies": {
-        "@anduh/pug-cli": "^1.0.0-alpha8"
+        "@anduh/pug-cli": "^1.0.0-alpha8",
+        "gh-pages": "^3.2.3"
     }
 }

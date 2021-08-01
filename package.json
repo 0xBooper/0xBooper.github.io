@@ -1,5 +1,5 @@
 {
-    "name": "0xBooper.github.io",
+    "name": "a-kewl-blog",
     "version": "1.0.0-beta",
     "description": "A personal website where I might post my thoughts.",
     "scripts": {
@@ -17,5 +17,6 @@
     "dependencies": {
         "@anduh/pug-cli": "^1.0.0-alpha8",
         "gh-pages": "^3.2.3"
-    }
+    },
+    "devDependencies": {}
 }

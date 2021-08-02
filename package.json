@@ -3,17 +3,16 @@
     "version": "1.0.0-beta",
     "description": "A personal website where I might post my thoughts.",
     "scripts": {
+        "dev": "pug3 -o ./build -w ./src -P",
         "build": "pug3 -o ./build ./src -P",
-        "postbuild": "mkdir ./build/css && cp ./src/css/styles.css ./build/css/styles.css",
-        "deploy": "node deploy.js",
+        "postbuild": "mkdir \"./build/css\" && cp \"./src/css/styles.css\" \"./build/css/styles.css\"",
         "predeploy": "yarn build",
-        "dev": "pug3 -o ./build -w ./src -P"
+        "deploy": "node deploy.js"
     },
     "main": "none",
     "repository": "https://github.com/0xBooper/0xBooper.github.io.git",
     "author": "0xBooper <yourhighboopness@gmail.com>",
     "license": "GPL-3.0-only",
-    "private": false,
     "dependencies": {
         "@anduh/pug-cli": "^1.0.0-alpha8",
         "gh-pages": "^3.2.3"

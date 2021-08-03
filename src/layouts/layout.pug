@@ -8,16 +8,11 @@ html(lang="en")
         
         link(rel="stylesheet", href="../css/styles.css")
          
-        title 0xBooper's Site
         block header
     body
-        .container
-            header.main-header
-                h1.main-header-text 0xBooper's personal Site
-                nav.main-nav
-                    ul
-                        li.nav-link: a(href="/index") Home 
-                        li.nav-link: a(href="/articles") Articles
-                        li.nav-link: a(href="/links") Links to stuff
+        include ../includes/nav.pug 
+        block content
+        
+        hr
 
-            block content
+        block articleDate

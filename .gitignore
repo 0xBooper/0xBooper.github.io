@@ -1,0 +1,6 @@
+# Basic ignore stuff
+node_modules
+build
+
+# Ignore error logs
+yarn-*.log

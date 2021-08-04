@@ -1,0 +1,26 @@
+name: 0xBooper.github.io Continous Deployment
+
+on:
+  release:
+    types: [published]
+
+  workflow_dispatch:
+
+jobs:
+  deploy_to_gh_pages:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install everything
+        run: yarn install --frozen-lockfile
+
+      - name: Publish to gh-pages
+        run: yarn deploy

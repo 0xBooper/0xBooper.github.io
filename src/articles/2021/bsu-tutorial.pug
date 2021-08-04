@@ -1,0 +1,36 @@
+extends ../../layouts/layout.pug 
+
+block content 
+    h1 A little guide on how to use my own utility, the Bash Scripting Utility.
+
+    h2 Downloading it:
+    ol
+        li Install git using your favourite package manager. (e.g: pacman -S git)
+        li Run: git clone https://github.com/0xBooper/BashScriptingUtility.git
+
+    h2 Installing it:
+    ol 
+        li Run this (may need sudo priviledges): bash install.sh
+
+    h2 Usage
+
+    p Remember that this can be seen by running: bashutil -h
+
+    p A basic usage of the utility: bashutil -d ~/foo -f bar 
+    p -d means the directory of the script. 
+    p -f means the filename of the script. 
+
+    p A usage containing the shebang select option: bashutil -s -d ~/foo -f bar 
+    p -d and -f mean the same. 
+    p -s tells the utility to select a shebang. It will prompt you before script creation. 
+
+    p Options (taken from bashutil -h):
+    ul 
+        li -h: Shows the help screen 
+        li -v: Shows current version of the installed utility.
+        li -f: The filename of the script. For an example look above.
+        li -d: The directory location of the script. For an example look above.
+        li -s: Provides a startup prompt asking which shebang to use. For an example look above. If -s isn't specified, it defaults to /bin/bash
+
+block articleDate
+    p Made on May 1. Modified May 12, 2021 

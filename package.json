@@ -4,10 +4,11 @@
     "description": "A personal website where I might post my thoughts.",
     "scripts": {
         "dev": "pug3 -o ./build -w ./src -P",
+        "cleanup": "rm -rf \"./build/includes\" && rm -rf \"./build/layouts\"",
         "prebuild": "rm -rf build",
         "build": "pug3 -o ./build ./src -P",
         "postbuild": "mkdir \"./build/css\" && cp \"./src/css/styles.css\" \"./build/css/styles.css\"",
-        "predeploy": "yarn build",
+        "predeploy": "yarn build && yarn cleanup",
         "deploy": "node deploy.js"
     },
     "main": "none",

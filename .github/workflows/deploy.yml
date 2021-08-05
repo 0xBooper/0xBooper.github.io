@@ -22,5 +22,11 @@ jobs:
       - name: Install everything
         run: yarn install --frozen-lockfile
 
+      - name: Cleanup build
+        run: yarn cleanup
+
       - name: Publish to gh-pages
-        run: yarn deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build

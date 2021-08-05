@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Articles | Bash Scripting Utility Guide</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <h1 class="main-header-text">0xBooper's personal Site</h1>
+        <nav class="main-nav"></nav>
+        <ul>
+          <li class="nav-link"><a href="/index">Home </a></li>
+          <li class="nav-link"><a href="/articles">Articles</a></li>
+          <li class="nav-link"><a href="https://github.com/0xBooper">Github Page</a></li>
+        </ul>
+      </header>
+      <h1>A little guide on how to use my own utility, the Bash Scripting Utility.</h1>
+      <h2>Downloading it:</h2>
+      <ol>
+        <li>Install git using your favourite package manager. (e.g: pacman -S git)</li>
+        <li>Run: git clone https://github.com/0xBooper/BashScriptingUtility.git</li>
+      </ol>
+      <h2>Installing it:</h2>
+      <ol> 
+        <li>Run this (may need sudo priviledges): bash install.sh</li>
+      </ol>
+      <h2>Usage</h2>
+      <p>Remember that this can be seen by running: bashutil -h</p>
+      <p>A basic usage of the utility: bashutil -d ~/foo -f bar </p>
+      <p>-d means the directory of the script. </p>
+      <p>-f means the filename of the script. </p>
+      <p>A usage containing the shebang select option: bashutil -s -d ~/foo -f bar </p>
+      <p>-d and -f mean the same. </p>
+      <p>-s tells the utility to select a shebang. It will prompt you before script creation. </p>
+      <p>Options (taken from bashutil -h):</p>
+      <ul> 
+        <li>-h: Shows the help screen </li>
+        <li>-v: Shows current version of the installed utility.</li>
+        <li>-f: The filename of the script. For an example look above.</li>
+        <li>-d: The directory location of the script. For an example look above.</li>
+        <li>-s: Provides a startup prompt asking which shebang to use. For an example look above. If -s isn't specified, it defaults to /bin/bash</li>
+      </ul>
+      <hr>
+      <p>Made on May 1. Modified May 12, 2021 </p>
+    </div>
+  </body>
+</html>

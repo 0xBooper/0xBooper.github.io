@@ -1,6 +1,6 @@
 {
     "name": "a-kewl-blog",
-    "version": "1.0.0-beta",
+    "version": "1.0.1",
     "description": "A personal website where I might post my thoughts.",
     "scripts": {
         "dev": "pug3 -o ./build -w ./src -P",

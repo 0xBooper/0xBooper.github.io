@@ -22,6 +22,9 @@ jobs:
       - name: Install everything
         run: yarn install --frozen-lockfile
 
+      - name: Build the src files
+        run: yarn build
+
       - name: Cleanup build
         run: yarn cleanup
 

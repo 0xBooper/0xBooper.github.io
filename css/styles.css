@@ -36,7 +36,12 @@ body {
 }
 
 .nav-link a,
-.link a {
+.link a,
+.link {
     text-decoration: none;
     color: #98de8c;
+}
+
+.container-404 {
+    text-align: center;
 }
